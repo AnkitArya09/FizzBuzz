@@ -1,0 +1,14 @@
+def fizzbuzz (start, end):
+  if start % 15 == 0:
+    print 'fizzbuzz'
+  elif start % 3 == 0:
+    print 'fizz'
+  elif start % 5 == 0:
+    print 'buzz'
+  else:
+    print start
+  
+  if start < end:
+    fizzbuzz(start+1, end)
+  
+fizzbuzz(1, 100)
